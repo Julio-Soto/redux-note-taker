@@ -9,7 +9,7 @@ const notesReducer = (state = [],action) => {
                 ...state,
                 {
                     id: ++lastID,
-                    textBody: action.payload.textBody
+                    noteBody: action.payload.noteBody
                 }
             ]
         }
