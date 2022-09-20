@@ -22,7 +22,7 @@ ul {
   border: 2px solid darkslategray;
   border-radius: 10px;
   background-color: cadetblue;
-  margin-top: 2em;
+  margin: 2em 0 0 2em;
 }
 .note-container-header {
   width: 100%;
@@ -35,4 +35,11 @@ ul {
 button {
   background-color: #CB4C4E;
   cursor: pointer;
+}
+input {
+  width: 400px;
+  height: 6em;
+  margin-top: 2em;
+  border: 2px solid darkslategray;
+  border-radius: 10px;
 }
