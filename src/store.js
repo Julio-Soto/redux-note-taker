@@ -1,5 +1,7 @@
-import { ReactReduxContext } from "react-redux";
 import { createStore } from "redux";
+import notesReducer from './reducers/notesReducer'
 
-const store = createStore()
+const store = createStore(notesReducer)
+
+export default store
 
