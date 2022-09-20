@@ -9,14 +9,20 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello Note Taker</h1>
+      <div className='input-container'>
+        <h1>Hello Note Taker</h1>
+      </div>
       <ul>
         {notesList.map(
           note => (
             <li key={note.id}>
               <div className='note-container'>
-                <h3>{note.noteBody}</h3>
-                <button onClick={() => dispatch(noteErased(note.id))}>ERASE</button>
+                <div className='note-container-header'>
+                  <button onClick={() => dispatch(noteErased(note.id))}>ERASE</button>
+                </div>
+                <div className='note-container-body'>
+                  <p>{note.noteBody}</p>
+                </div>
               </div>
             </li>
           )
