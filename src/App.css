@@ -5,41 +5,65 @@
 .App {
   width: 100vw;
   min-height: 100vh;
-  background-color: lightblue;
+  background-color: #00204a;
   text-align: center;
+}
+.header {
+  color:#00bbf0;
+  text-align: left;
+  padding: 0.5em 2em;
+  border-bottom: 1px solid #00bbf0;
 }
 .input-container {
   width: 100%;
-  height: 10em;
-  border-bottom: 2px solid darkslategray;
+  padding: 2em 0;
+}
+input {
+  width: 566px;
+  height: 22px;
+  padding: 12px 16px;;
+  background-color: #00204a;
+  border: 1px solid #00bbf0;
+  border-radius: 10px;
 }
 ul {
   list-style: none;
 }
 .note-container {
-  width: 50%;
-  min-width: 600px;
-  border: 2px solid darkslategray;
-  border-radius: 10px;
-  background-color: cadetblue;
-  margin: 2em 0 0 2em;
+  width: 240px;
+  border: 1px solid #00bbf0;
+  border-radius: 5px;
+  background-color: #00204a;
+  color: whitesmoke;
+  margin: 2em 1em 2em 1em;
 }
-.note-container-header {
+ ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1em;
+  list-style: none;
+}
+.note-container-footer {
   width: 100%;
-  height: 1px;
+  height: 34px;
   text-align: right;
 }
 .note-container-body {
   padding: 1.2em;
 }
 button {
-  background-color: #CB4C4E;
+  width: 34px;
+  height: 34px;
+  color:#00bbf0;
+  background-color: #00204a;
   cursor: pointer;
+  border: none;
+  border-radius: 100%;
 }
-input {
-  width: 400px;
-  height: 6em;
-  margin-top: 2em;
-  border: 2px solid darkslategray;
-  border-radius: 10px;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
 }

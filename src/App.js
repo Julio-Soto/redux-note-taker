@@ -16,6 +16,9 @@ function App() {
 
   return (
     <div className="App">
+      <div className='header'>
+        <h1>KEEP</h1>
+      </div>
       <div className='input-container'>
         <input type="text" ref={textBody}/>
         <button onClick={submitTextBody}>ADD</button>
@@ -25,11 +28,11 @@ function App() {
           note => (
             <li key={note.id}>
               <div className='note-container'>
-                <div className='note-container-header'>
-                  <button onClick={() => dispatch(noteErased(note.id))}>ERASE</button>
-                </div>
                 <div className='note-container-body'>
                   <p>{note.noteBody}</p>
+                </div>
+                <div className='note-container-footer'>
+                  <button className="material-symbols-outlined" onClick={() => dispatch(noteErased(note.id))}>delete</button>
                 </div>
               </div>
             </li>
